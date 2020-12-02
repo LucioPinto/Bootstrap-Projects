@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portal de Filmes</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="formatação/header/estilosHeader.css">
+    <link rel="stylesheet" href="formatação/conteúdo/estilosConteúdo.css">
+    <link rel="stylesheet" href="formatação/modal/estilosModal.css">
+    <link rel="stylesheet" href="formatação/footer/estilosFooter.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" id="favicon" href="imagens/claquete.png">
+</head>
+
+<body>
+
+    <header class="container header">
+
+        <div class="row">
+
+            <div class="col-12 header_area">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg navbar-light navegacao">
+                        <a href="#"><img src="imagens/logo.png" class="navbar-brand logo" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                            aria-label="Toggle navigation">
+
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                <li class="nav-item">
+                                    <div class="borda_item">
+                                        <a class="nav-link" href="#lancamentos">lançamentos</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="borda_item">
+                                        <a class="nav-link" href="#destaque">em destaque</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="borda_item">
+                                        <a class="nav-link" href="#avaliacoes">avaliações</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="borda_item">
+                                        <a class="nav-link" href="#entrevistas">entrevistas & making of</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="borda_item">
+                                        <a class="nav-link" href="#novidades">novidades</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pesquisa/pesquisa.html" target="_blank">pesquisar
+                                        filme</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="container main">
+
+        <div id="myModal" class="modal"></div>
+
+        <!-- Lançamentos -->
+        <div class="lancamentos_title" id="lancamentos">
+            <h2>Lançamentos</h2>
+        </div>
+
+        <!-- Listagem dinâmica Lançamento -->
+        <div id="listagemDinamicaLancamento"></div>
+
+        <!-- Destaque -->
+        <div class="destaque_title" id="destaque">
+            <h2>Em destaque</h2>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Categoria: TODOS
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="destaques/destaques.html" target="_blank">Aventura</a>
+                    <a class="dropdown-item" href="destaques/destaques.html" target="_blank">Romance</a>
+                    <a class="dropdown-item" href="destaques/destaques.html" target="_blank">Comédia</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Listagem dinâmica Destaques -->
+        <div id="listagemDinamicaDestaques"></div>
+
+        <div class="botao_mais_filmes">
+            <a href="destaques/destaques.html" target="_blank"><button type="button" class="btn btn-secondary">Carregar
+                    mais filmes</button></a>
+        </div>
+
+        <!-- Últimas avaliações -->
+        <div class="avaliacoes_title" id="avaliacoes">
+            <h2>Últimas avaliações</h2>
+        </div>
+        <div class="col-12">
+            <div class="row avaliacoes">
+                <div class="col-12 col-lg-4 col-xl-4 avaliacoes_item">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="imagens/avaliador.png" alt="">
+                        </div>
+                        <div class="col-10">
+                            <h3>Nelson J</h3>
+                            <p>
+                                <strong>Avaliação: </strong>Maioria das cópias são dubladas e o som, mesmo em sala
+                                moderna é
+                                deficiente na parte inicial, pois mais se escuta a música do que as vozes cantando.
+                                Filme com narrativa lenta e cansativa, culminando com um final super tradicional com a
+                                Ana se tornando rainha e casando com o Christopher. Para piorar a irmã Elza vai para
+                                outro reino. Tradicional e piegas, mas efeitos especiais salvam a obra.
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <strong>02/09/2020</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-xl-4 avaliacoes_item">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="imagens/avaliador.png" alt="">
+                        </div>
+                        <div class="col-10">
+                            <h3>Gabriel C.</h3>
+                            <p>
+                                <strong>Avaliação: </strong>Eu tinha ficado com um certo receio de Toy Story 4, devido
+                                ao desfecho
+                                do 3, que para mim havia encerrado um ciclo de forma perfeita, mas o novo longa não deve
+                                em nada para seus anteriores. Toy Story 4 consegue manter a magia e a qualidade e nos
+                                surpreende ao abordar de forma madura temas que são corriqueiros em nossas vidas. Emoção
+                                e diversão garantida, que conta com um desfecho maravilhoso. É impossível não rir e se
+                                emocionar nessa nova aventura, vale muito a pena!
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <strong>02/09/2020</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-xl-4 avaliacoes_item">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="imagens/avaliador.png" alt="">
+                        </div>
+                        <div class="col-10">
+                            <h3>Jeff S.</h3>
+                            <p>
+                                <strong>Avaliação: </strong>A espera de 10 anos valeu sim à pena. Filme fez jus a um
+                                encerramento
+                                de uma saga. Marvel nos deu tudo que queríamos. A batalha final é arrepiante, te leva no
+                                ápice de todas as emoções. Agora só nos resta aguardar pra ver com o que a Marvel nos
+                                fazerá sonhar daqui pra frente. Obrigado Marvel por essa experiência nessa década!
+                            </p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <strong>02/09/2020</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="botao_mais_avaliacoes">
+            <a href="destaques/destaques.html" target="_blank"><button type="button" class="btn btn-secondary">Carregar
+                    mais avaliações</button></a>
+        </div>
+
+        <!-- Entrevistas & Making of -->
+        <div class="entrevistas_title" id="entrevistas">
+            <h2>Entrevistas & Making of</h2>
+        </div>
+        <div class="col-12">
+            <div class="row entrevistas">
+                <div class="col-12 col-lg-4 col-xl-4 entrevistas_item">
+                    <iframe width="100%" height="250px" src="https://www.youtube.com/embed/3uXhyHzuGMY"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title=""
+                        allowfullscreen>
+                    </iframe>
+                    <h5><strong>Filme: </strong>Frozen 2</h5>
+                    <p>
+                        <strong>Diretor: </strong>Jennifer Lee | Chris Buck
+                        <br>
+                        <strong>Roteiro: </strong>Jennifer Lee
+                        <br>
+                        <strong>Estreia: </strong>02/01/2020
+                    </p>
+                </div>
+
+                <div class="col-12 col-lg-4 col-xl-4 entrevistas_item">
+                    <iframe width="100%" height="250px" src="https://www.youtube.com/embed/0PfH-Zqxq9g"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title=""
+                        allowfullscreen>
+                    </iframe>
+                    <h5><strong>Filme: </strong>Vingadores: Ultimato</h5>
+                    <p>
+                        <strong>Diretor: </strong>Anthony Russo Joe Russo
+                        <br>
+                        <strong>Roteiro: </strong>Christopher Markus | Stephen McFeely
+                        <br>
+                        <strong>Estreia: </strong>25/04/2019
+                    </p>
+                </div>
+
+                <div class="col-12 col-lg-4 col-xl-4 entrevistas_item">
+                    <iframe width="100%" height="250px" src="https://www.youtube.com/embed/JLa7DTb7--U"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title=""
+                        allowfullscreen>
+                    </iframe>
+                    <h5><strong>Filme: </strong>Star Wars - A Ascensão Skywalker</h5>
+                    <p>
+                        <strong>Diretor: </strong>J. J. Abrams
+                        <br>
+                        <strong>Roteiro: </strong>J. J. Abrams | Chris Terrio
+                        <br>
+                        <strong>Estreia: </strong>19/12/2020
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="botao_mais_entrevistas">
+            <a href="destaques/destaques.html" target="_blank"><button type="button" class="btn btn-secondary">Carregar
+                    mais filmes</button></a>
+        </div>
+
+        <!-- Novidades -->
+        <div class="col-12" id="novidades">
+            <div class="row">
+                <!-- Listagem dinâmica Novidades -->
+                <div id="listagemDinamicaNovidades" class="col-12 col-lg-8 novidades_item"></div>
+
+                <div class="col-12 col-lg-4 sobre_item">
+                    <div class="sobre_title">
+                        <h2>Sobre</h2>
+                    </div>
+                    <p>O Instituto de Ciências Exatas e Informática (ICEI) da PUC Minas é um instituto que promove
+                        educação de qualidade nos cursos de graduação em Ciência da Computação, Engenharia de
+                        Computação, Engenharia de Software, Física, Jogos Digitais, Matemática e Sistemas de informação;
+                        no curso de pós-graduação stricto sensu em Informática e nos vários cursos de especialização
+                        lato sensu. Assim, na área de Ciências Exatas e Informática, o ICEI é responsável pelo ensino de
+                        graduação e pós-graduação, pela pesquisa e extensão.</p>
+                    <div class="editorial_title">
+                        <h2>Editorial</h2>
+                    </div>
+                    <p>
+                        <img src="imagens/do-utilizador.png" alt="" width="25px" height="25px">
+                        <strong>Redação: </strong>ICEI
+                    </p>
+                    <p>
+                        <img src="imagens/do-utilizador.png" alt="" width="25px" height="25px">
+                        <strong>Pesquisa: </strong>PUC-MG
+                    </p>
+                    <p>
+                        <img src="imagens/do-utilizador.png" alt="" width="25px" height="25px">
+                        <strong>Gerente Geral: </strong>Lúcio
+                    </p>
+                    <br>
+                    <h4>redes sociais:</h4>
+                    <a href="https://www.facebook.com/pucminasoficial/" target="_blank" rel="noopener noreferrer">
+                        <img src="imagens/facebook.png" alt="" class="social_icone"></a>
+                    <a href="https://icei.pucminas.br/" target="_blank" rel="noopener noreferrer">
+                        <img src="imagens/twitter.png" alt="" class="social_icone"></a>
+                    <a href="https://instagram.com/napucminas" target="_blank" rel="noopener noreferrer">
+                        <img src="imagens/instagram.png" alt="" class="social_icone"></a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="container footer">
+
+        <div class="row">
+
+            <div class="col-12 footer_area">
+                <p>Copyright 2020 - Diciplina de Desenvolvimento de Interfaces Web - <strong>ICEI PUC MINAS</strong></p>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+
+/*Destaques*/
+.destaque_imagem{
+    width: 100%;
+    height: 210px;
+    margin: 20px 0px;
+}
+
+.destaque_imagem:hover{
+    cursor: pointer;
+}
+
+.com_borda{
+    border-bottom: 3px solid #485563;
+}
+
+.descricao{
+    margin-top: 20px;
+}
+
+.descricao button{
+    background: #485563;
+    color: white;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
